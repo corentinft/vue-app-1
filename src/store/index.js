@@ -7,7 +7,6 @@ import questions from '@/assets/data.json'
 export default createStore({
   state: {
 
-    questions: questions,
     question: null,
     score: null
 
@@ -24,14 +23,14 @@ export default createStore({
       router.push('/questionary')
     },
 
-    setQuestion({ state, dispatch }) {
+    setQuestion({ state }) {
       let nbQ
       nbQ = VueCookieNext.getCookie('questionary').nbQ
 
       state.question = questions.find(x => x.nbQ === nbQ)
 
-      if (state.question = -1)
-        dispatch('congratulation')
+      if (state.question == undefined)
+        router.push('/congratulation')
     },
 
     uplaodResponse({ dispatch }, index) {
@@ -47,24 +46,29 @@ export default createStore({
 
       VueCookieNext.setCookie('questionary', {
         "nbQ": (parseInt(cookie.nbQ) + 1),
-        "responses": JSON.stringify(parseResponseArray)
+        "responses": JSON.stringify(parseResponsesArray)
       })
 
       dispatch('setQuestion')
     },
 
-    congratulation() {
+    congratulation({ state }) {
       let responses
       let score = 0
-      responses = VueCookieNext.getCookie('questionary').responses
+      responses = JSON.parse(VueCookieNext.getCookie('questionary').responses)
 
       responses.forEach(response => {
-        if questions
+        if (questions.find(x => x.nbQ == response.question).response.findIndex(x => x.validate == true) == response.response)
+          score = score + 1
       })
-      state.question = questions.find(x => x.nbQ === nbQ)
 
-      router.push('/questionary')
+      state.score = score / questions.length * 100
+    },
+
+    returnHome() {
+      VueCookieNext.removeCookie('questionary')
+
+      router.push('/')
     }
-
   }
 })
