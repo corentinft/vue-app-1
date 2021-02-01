@@ -1,0 +1,418 @@
+[
+  {
+    "nbQ": 1,
+    "question": "Quels sont les avantages de Vue.js?",
+    "response": [
+      {
+        "text": "De petite taille - La taille de ce framework est comprise entre 18 et 21 Ko et le téléchargement et l'utilisation par l'utilisateur prennent du temps.",
+        "validate": false
+      },
+      {
+        "text": "Facile à comprendre — L'une des raisons pour la popularité de ce framework est ce qu'il est facile à comprendre. L'utilisateur peut facilement ajouter Vue.js à son projet web grace à sa structure simple..",
+        "validate": false
+      },
+      {
+        "text": "Intégration simple — Vue.js peut facilement être intégré aux application existantes.",
+        "validate": false
+      },
+      {
+        "text": "DOM virtuel — Il utilise de DOM virtuel similaire à d'autres frameworks existants tel que ReactJS, Ember etc. DOM virtuel est une représentation légère en arborescence du DOM HTML d'origine mis à jour sans affecter le DOM d'origine.",
+        "validate": false
+      },
+      {
+        "text": "Tous les réponses susmentionnées.",
+        "validate": true
+      }
+    ]
+  },
+  {
+    "nbQ": 2,
+    "question": ".prevent sera ignoré s'il on utilise .passive et .prevent ensemble et il affichera probablement un message d'avertissement.",
+    "response": [
+      {
+        "text": "Vrai",
+        "validate": true
+      },
+      {
+        "text": "Faux",
+        "validate": false
+      }
+    ]
+  },
+  {
+    "nbQ": 3,
+    "question": "Quelle directive est utilisée pour établir une liaison bidirectionnelle?",
+    "response": [
+      {
+        "text": "Aucune",
+        "validate": false
+      },
+      {
+        "text": "v-inline",
+        "validate": false
+      },
+      {
+        "text": "v-model",
+        "validate": true
+      },
+      {
+        "text": "v-on",
+        "validate": false
+      }
+    ]
+  },
+  {
+    "nbQ": 4,
+    "question": "Quelle directive est utilisée pour attacher des écouteurs d'événement qui invoquent des méthodes?",
+    "response": [
+      {
+        "text": "v-for",
+        "validate": false
+      },
+      {
+        "text": "v-on",
+        "validate": true
+      },
+      {
+        "text": "v-model",
+        "validate": false
+      },
+      {
+        "text": "v-bind",
+        "validate": false
+      }
+    ]
+  },
+  {
+    "nbQ": 5,
+    "question": "Quelle interpolation de liaison de données est aussi connues comme la syntaxe “Mustache”?",
+    "response": [
+      {
+        "text": "[]",
+        "validate": false
+      },
+      {
+        "text": "v-model",
+        "validate": false
+      },
+      {
+        "text": "{{}}",
+        "validate": true
+      },
+      {
+        "text": "v-on",
+        "validate": false
+      }
+    ]
+  },
+  {
+    "nbQ": 6,
+    "question": "Lorsqu'un modèle de vue (View model) est détruit, tous les écouteurs d'événements sont automatiquement supprimés.",
+    "response": [
+      {
+        "text": "Vrai",
+        "validate": true
+      },
+      {
+        "text": "Faux",
+        "validate": false
+      }
+    ]
+  },
+  {
+    "nbQ": 7,
+    "question": "Combien de types de directives sont disponibles en vue.js?",
+    "response": [
+      {
+        "text": "2",
+        "validate": false
+      },
+      {
+        "text": "4",
+        "validate": true
+      },
+      {
+        "text": "6",
+        "validate": false
+      },
+      {
+        "text": "7",
+        "validate": false
+      }
+    ]
+  },
+  {
+    "nbQ": 8,
+    "question": "Comment installer le vue cli globalement?",
+    "response": [
+      {
+        "text": "npm install vue-cli",
+        "validate": false
+      },
+      {
+        "text": "npm install -g vue-cli",
+        "validate": true
+      },
+      {
+        "text": "npm install vue-cli -global",
+        "validate": false
+      },
+      {
+        "text": " npm install vue-cli -g",
+        "validate": false
+      }
+    ]
+  },
+  {
+    "nbQ": 9,
+    "question": "Quel modificateur d'événement est utilisé pour empêcher uniquement les clics sur l'élément lui-même?",
+    "response": [
+      {
+        "text": "@click.prevent.self",
+        "validate": false
+      },
+      {
+        "text": "@click.self.prevent",
+        "validate": true
+      },
+      {
+        "text": "@click.prevent",
+        "validate": false
+      }
+    ]
+  },
+  {
+    "nbQ": 10,
+    "question": "Comment utiliser une boucle for en vue js?",
+    "response": [
+      {
+        "text": "vFor",
+        "validate": false
+      },
+      {
+        "text": "*v-for",
+        "validate": false
+      },
+      {
+        "text": "v-for",
+        "validate": true
+      },
+      {
+        "text": "*ngFor",
+        "validate": false
+      }
+    ]
+  },
+  {
+    "nbQ": 11,
+    "question": "Qu'est-ce qui est utilisé pour lier dinamiquement un ou plusieurs attributs, ou une propriété de composant à une expression?",
+    "response": [
+      {
+        "text": "v-pre",
+        "validate": false
+      },
+      {
+        "text": "v-bind,",
+        "validate": true
+      },
+      {
+        "text": "v-once",
+        "validate": false
+      },
+      {
+        "text": "v-html",
+        "validate": false
+      }
+    ]
+  },
+  {
+    "nbQ": 12,
+    "question": "Quel est le moyen correct une nouvel instance en vue.js?",
+    "response": [
+      {
+        "text": "var text = new Vue({ // options })",
+        "validate": true
+      },
+      {
+        "text": "var text = new vue(){ // options }",
+        "validate": false
+      },
+      {
+        "text": "var text = new object({ // options })",
+        "validate": false
+      },
+      {
+        "text": "var text = new text({ // options })",
+        "validate": false
+      }
+    ]
+  },
+  {
+    "nbQ": 13,
+    "question": "Quel mot-clé est utilisé pour créer une constant en vue.js?",
+    "response": [
+      {
+        "text": "Aucune de ces réponses",
+        "validate": false
+      },
+      {
+        "text": "define",
+        "validate": false
+      },
+      {
+        "text": "const",
+        "validate": true
+      }
+    ]
+  },
+  {
+    "nbQ": 14,
+    "question": "Quel modificateur d'événement sera utilisé si nous voulons exécuter l'événement click uniquement une fois?",
+    "response": [
+      {
+        "text": "<a @:click.once=\"dotask\"></a>",
+        "validate": true
+      },
+      {
+        "text": "<a @:click.prevent-once=\"dotask\"></a>",
+        "validate": false
+      },
+      {
+        "text": "<a @:click.stop=\"dotask\"></a>",
+        "validate": false
+      },
+      {
+        "text": "<a @:click.passive=\"dotask\"></a>",
+        "validate": false
+      }
+    ]
+  },
+  {
+    "nbQ": 15,
+    "question": "V-show ne supporte pas d'élément <template>.",
+    "response": [
+      {
+        "text": "Vrai",
+        "validate": true
+      },
+      {
+        "text": "Faux",
+        "validate": false
+      }
+    ]
+  },
+  {
+    "nbQ": 16,
+    "question": "Quelle est la forme complète de MVVM?",
+    "response": [
+      {
+        "text": "Model-View-ValueModel",
+        "validate": false
+      },
+      {
+        "text": "Model-Value-ValueModel",
+        "validate": false
+      },
+      {
+        "text": "Model-View-ViewModel",
+        "validate": true
+      },
+      {
+        "text": "Module-View-ViewModel",
+        "validate": false
+      }
+    ]
+  },
+  {
+    "nbQ": 17,
+    "question": "Tous sont des crochets de cycle de vie en Vue sauf... ?",
+    "response": [
+      {
+        "text": "beforeCreate",
+        "validate": false
+      },
+      {
+        "text": "created",
+        "validate": false
+      },
+      {
+        "text": "mounted",
+        "validate": false
+      },
+      {
+        "text": "beforeMount",
+        "validate": false
+      },
+      {
+        "text": "didMount",
+        "validate": true
+      }
+    ]
+  },
+  {
+    "nbQ": 18,
+    "question": "Qu'est-ce qui est $parent en Vue?",
+    "response": [
+      {
+        "text": "Similaire à $root, la propriété $parent peut être utilisée pour accéder à l'instance parent depuis un enfant.",
+        "validate": false
+      },
+      {
+        "text": "Il fournit l'accès direct, il rend l'application difficile à tester et à déboguer.",
+        "validate": false
+      },
+      {
+        "text": "Aucune de ces réponses.",
+        "validate": false
+      },
+      {
+        "text": "Tous les réponses susmentionnées.",
+        "validate": true
+      }
+    ]
+  },
+  {
+    "nbQ": 19,
+    "question": "Quelle est la différence entre les directives v-show et v-if?",
+    "response": [
+      {
+        "text": "v-if rend uniquement l'élément au DOM si l'expression est transmise alors que v-show rend tous les éléments au DOM, puis utilise la propriété CSS display pour afficher / masquer les éléments en fonction de l'expression.",
+        "validate": false
+      },
+      {
+        "text": "v-if prend en charge les directives v-else et v-else-if tandis que v-show ne prend pas en charge de directives else.",
+        "validate": false
+      },
+      {
+        "text": "v-if supporte l'onglet mais v-show ne le supporte pas.",
+        "validate": false
+      },
+      {
+        "text": "Tous les réponses susmentionnées.",
+        "validate": true
+      }
+    ]
+  },
+  {
+    "nbQ": 20,
+    "question": "La directive v-model est utilisée en ... ?",
+    "response": [
+      {
+        "text": "liaison de données bidirectionnelle où la partie de vue de l'application (UI) est mise à jour automatiquement lorsque le modèle de données est modifié.",
+        "validate": true
+      },
+      {
+        "text": "liaison de données bidirectionnelle où la partie de vue de l'application (UI) n'est pas mise à jour automatiquement. On a besoin d'écrire quelque code personnalisé pour la mettre à jour chaque fois un modèle de données est modifié.",
+        "validate": false
+      },
+      {
+        "text": "liaison de données unidirectionnelle où la partie de vue de l'application (UI) est mise à jour automatiquement lorsque le modèle de données est modifié.",
+        "validate": false
+      },
+      {
+        "text": "liaison de données unidirectionnelle où la partie de vue de l'application (UI) n'est pas mise à jour automatiquement. On a besoin d'écrire quelque code personnalisé pour la mettre à jour chaque fois un modèle de données est modifié..",
+        "validate": false
+      }
+    ]
+  }
+]
